@@ -2,6 +2,10 @@
 
 > MATLAB 기반 ULA 빔패턴 형성, 빔 조향 및 비등간격 배열의 Least Squares 가중치 보상 분석
 
+![MATLAB](https://img.shields.io/badge/MATLAB-Array%20Processing-orange?logo=mathworks&logoColor=white)
+![Topic](https://img.shields.io/badge/Topic-Smart%20Antenna-blue)
+![Method](https://img.shields.io/badge/Method-Chebyshev%20%7C%20Least%20Squares-success)
+
 ## Overview
 
 스마트안테나 교과 과제에서 15소자 ULA(Uniform Linear Array)를 대상으로 배열 가중치와 소자 배치가 빔패턴에 미치는 영향을 MATLAB으로 분석했습니다. 기준 배열의 Chebyshev 빔패턴을 생성한 뒤, 빔 조향과 비등간격 배열 조건에서도 목표 패턴에 가깝게 만드는 가중치 계산 과정을 비교했습니다.
@@ -46,19 +50,17 @@ Reference and compensated beam pattern comparison
 
 15소자, 반파장 간격 배열에서 Chebyshev 가중치를 적용해 기준 빔패턴을 생성했습니다. 주엽을 0 dB로 정규화하고 부엽 수준을 확인했습니다.
 
-![Chebyshev beam pattern](assets/chebyshev_beam_pattern.png)
-
 ### 2. Least Squares Compensation for Non-uniform Array
 
 랜덤한 소자 간격으로 구성한 배열에 대해 steering matrix를 만들고, 기준 Chebyshev 패턴과의 오차 제곱합이 작아지도록 Least Squares 가중치를 계산했습니다. 주엽의 위치와 형상은 기준 패턴에 가깝게 유지되지만, 비등간격 배치 특성으로 부엽 영역에는 차이가 남는 것을 확인했습니다.
 
-![Least Squares compensation result](assets/least_squares_compensation.png)
+<img src="assets/least_squares_compensation.png" alt="Least Squares compensation result" width="560" />
 
 ### 3. Beam Steering at 20°
 
 학생번호 끝자리 조건에 따라 20° 조향을 적용하고, 비등간격 배열에서도 동일 방향의 빔패턴을 목표로 Least Squares 가중치를 계산했습니다.
 
-![20 degree steering result](assets/beam_steering_20deg.png)
+<img src="assets/beam_steering_20deg.png" alt="20 degree steering result" width="560" />
 
 ## Repository Structure
 
