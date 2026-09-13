@@ -2,10 +2,6 @@
 
 > MATLAB 기반 ULA 빔패턴 형성, 빔 조향 및 비등간격 배열의 Least Squares 가중치 보상 분석
 
-![MATLAB](https://img.shields.io/badge/MATLAB-Array%20Processing-orange?logo=mathworks&logoColor=white)
-![Topic](https://img.shields.io/badge/Topic-Smart%20Antenna-blue)
-![Method](https://img.shields.io/badge/Method-Chebyshev%20%7C%20Least%20Squares-success)
-
 ## Overview
 
 스마트안테나 교과 과제에서 15소자 ULA(Uniform Linear Array)를 대상으로 배열 가중치와 소자 배치가 빔패턴에 미치는 영향을 MATLAB으로 분석했습니다. 기준 배열의 Chebyshev 빔패턴을 생성한 뒤, 빔 조향과 비등간격 배열 조건에서도 목표 패턴에 가깝게 만드는 가중치 계산 과정을 비교했습니다.
